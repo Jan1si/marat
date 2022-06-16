@@ -19,10 +19,9 @@ Route::get('/katalog', [MainController::class, 'katalog' ])->name('katalog');
 Route::get('/kontact', [MainController::class, 'kontact' ])->name('kontact');
 Route::get('/info', [MainController::class, 'info' ])->name('info');
 Route::get('/profile', [MainController::class, 'profile' ])->name('profile');
-Route::get('/login', [MainController::class, 'login' ])->name('sign_in');
-Route::get('/logout', [MainController::class, 'logout' ])->name('logout');
+Route::get('/sign_in', [MainController::class, 'sign_in' ])->name('sign_in');
+
 
 Route::post('/login', [RegisterController::class, 'login'])->name('login');
-Route::post('/register', [RegisterController::class, 'register'])->name('register');
-
-
+Route::post('/test', [RegisterController::class, 'register'])->name('test');
+//Route::post('/logout', [RegisterController::class, 'logout' ])->name('logout');

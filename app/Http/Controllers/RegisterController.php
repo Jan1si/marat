@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Auth\Events\Validated;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -12,7 +11,7 @@ class RegisterController extends Controller
 {
 
     public function register(Request $request){
-         dd($request);
+
         $name = $request -> input('name');
         $email = $request -> input('email');
         $password = $request -> input('password');
@@ -35,7 +34,6 @@ class RegisterController extends Controller
 
 
     public function login(Request $request){
-        dd($request);
         $name = $request->input('name');
         $password = $request->input('password');
         if(Auth::attempt([

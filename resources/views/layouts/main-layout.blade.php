@@ -71,8 +71,8 @@
                 <a href="">Избраное</a>
             </div>
             <div class="menu_list">
-                <a href="{{ route('login') }}"><img src="img/auth.png" alt=""></a>
-                <a href="{{ route('login') }}">Вход</a>
+                <a href="{{ route('sign_in') }}"><img src="img/auth.png" alt=""></a>
+                <a href="{{ route('sign_in') }}">Вход</a>
             </div>
         </div>
     </container>

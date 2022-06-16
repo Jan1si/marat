@@ -32,16 +32,9 @@ class MainController extends Controller
         ]);
     }
 
-    public function login() {
-        return view('pages.login', [
-        ]);
+    public function sign_in() {
+        return view('pages.login');
     }
 
 
-    public function logout(){
-        if(Auth::check()){
-            Auth::logout();
-            return redirect('index');
-        }
-    }
 }
