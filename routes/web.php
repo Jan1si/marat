@@ -23,5 +23,5 @@ Route::get('/sign_in', [MainController::class, 'sign_in' ])->name('sign_in');
 
 
 Route::post('/login', [RegisterController::class, 'login'])->name('login');
-Route::post('/test', [RegisterController::class, 'register'])->name('test');
+Route::post('/test', [RegisterController::class, 'register'])->name('register');
 //Route::post('/logout', [RegisterController::class, 'logout' ])->name('logout');

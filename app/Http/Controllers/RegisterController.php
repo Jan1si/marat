@@ -11,7 +11,7 @@ class RegisterController extends Controller
 {
 
     public function register(Request $request){
-
+        dd($request);
         $name = $request -> input('name');
         $email = $request -> input('email');
         $password = $request -> input('password');
